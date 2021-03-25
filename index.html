@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/small-profile.jpeg" />
+
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> -->
+
+    <!-- personnal css -->
+    <link rel="stylesheet" href="css/styles.min.css" />
+</head>
+
+<body>
+    <!-- The Modal -->
+    <div class="modal-wrap">
+        <div class="mask"></div>
+        <div class="modal" id="modal">
+
+            <div class="carousel-ctn">
+
+                <div class="carousel-window" id="window">
+                    <div class="carousel-slider" id="slider">
+                    </div>
+        
+                    <span class="material-icons btn left" id="btn-left">chevron_left</span>
+                    <span class="material-icons btn right" id="btn-right">chevron_right</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="title" id="modal-title">Titre</div>
+                <div class="subtitle" id="modal-subtitle">sous titre</div>
+                <div class="summary" id="modal-summary">detail</div>
+                <ul class="features" id="modal-features"></ul>
+                <div class="buttons-ctn">
+                    <a id="modal-website-link" href="#" target="_blank">
+                        <div class="button">
+                            <i class="website-link material-icons">open_in_new</i>VIEW SITE
+                        </div>
+                    </a>
+                    <a id="modal-github-link" href="#" target="_blank">
+                        <img class="github-link" src="images/GitHub-Mark-64px.png" alt="GitHub" />
+                    </a>
+                </div>
+            </div>
+            <i class="close material-icons">close</i>
+        </div>
+    </div>
+
+    <header id="header">
+        <nav class="navbar">
+            <div class="center-ctn">
+                <div class="navbar-title">FH</div>
+
+                <a href="#" class="sandwich" id="burger">
+                    <span class="bar line-1"></span>
+                    <span class="bar line-2"></span>
+                    <span class="bar line-3"></span>
+                </a>
+            </div>
+
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="#about">About&nbsp;me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION ABOUT -->
+    <section id="about">
+
+        <div class="center-div">
+            <div class="heading">About me</div>
+        </div>
+
+        <div class="about--ctn">
+
+
+            <div class="about--top-ctn">
+                <img src="images/moi.png" alt="">
+                <div class="description">
+                    <p class=title>
+                        I'm François, python developer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about--study-ctn">
+                <img src="images/graduate.png" alt="" class="img-study">
+                <div class="description">
+                    <p>
+                        I studied physics, informatics and didactics, which are some of my interests. I have worked as a teacher. From my experience, I can explain and communicate well.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about--python-ctn">
+
+                <div class="description">
+
+    
+                    <p>
+                        Using Python, I am interested in solving problems, manipulating data structures and algorithms. I also enjoy creating useful apps as well as fun games. I’m attached to make the code <span class="emphasis clean">clean</span>, <span class="emphasis grow">readable</span> and <span class="emphasis shuffle" id="shuffle">reusable</span>.
+                    </p>
+
+                    <p>
+                        I worked on several different projects and scripts (see my <a href="#portfolio">portfolio</a>).
+                    </p>
+
+
+                </div>
+
+                <img src="images/python_transp.png" alt="">
+            </div>
+
+            <div class="description">
+                <p>
+                    As far as I’m concerned, learning and teaching is interrelated. It's why I would gladly join a dynamic and friendly team. I speak French, English and German.
+                </p>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+    <!-- END SECTION ABOUT -->
+
+
+
+    <!-- SECTION SKILLS -->
+    <section id="skills">
+
+        <svg id="bigTriangleColor" 
+        xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M 0 0 L 50 100 L 100 0 Z" />
+        </svg>
+
+        <div class="center-div">
+            <div class="heading skills">my skills</div>
+        </div>
+
+        <div class="skills-cards-ctn">
+
+            <div class="skill-card">
+                <div class="title-img img-back"></div>
+                <div class="skill-title gradient-text">back-end</div>
+                <ul class="skill-items">
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>Django</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="title-img img-gui"></div>
+                <div class="skill-title gradient-text">GUI&nbsp;App</div>
+                <ul class="skill-items">
+                    <li>Tkinter</li>
+                    <li>PySide2 | Qt</li>
+                    <li>Kivy</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="title-img img-front"></div>
+                <div class="skill-title gradient-text">front-end</div>
+                <ul class="skill-items">
+                    <li>HTML 5</li>
+                    <li>CSS 3 | SCSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="title-img img-data"></div>
+                <div class="skill-title gradient-text">data</div>
+                <ul class="skill-items">
+                    <li>Csv | Pandas</li>
+                    <li>SQLite | Alchemy</li>
+                    <li>API build | requests</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="title-img img-auto"></div>
+                <div class="skill-title gradient-text">Automation</div>
+                <ul class="skill-items">
+                    <li>Web Scraping</li>
+                    <li>Scripting</li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="title-img img-deploy"></div>
+                <div class="skill-title gradient-text">Deployment</div>
+                <ul class="skill-items">
+                    <li>GitHub</li>
+                    <li>Heroku</li>
+                    <li>PythonAnywhere</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- END SECTION SKILLS -->
+
+    <!-- SECTION PORTFOLIO -->
+    <section id="portfolio">
+
+        <div class="center-div">
+            <div class="heading">my projects</div>
+        </div>
+
+        <div class="portfolio-cards-container">
+            <!-- Cards go there -->
+        </div>
+
+    </section>
+    <!-- END SECTION PORTFOLIO -->
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+
+        <div class="center-div">
+            <div class="heading skills">contact me</div>
+        </div>
+
+        <div class="form--ctn">
+
+
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/meqvjjpg" method="post">
+                <fieldset id="fs-frm-inputs">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Your message" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+    </div>
+      
+    </section>
+    <!-- END SECTION CONTACT -->
+      
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+
+        <div class="footer--center-ctn">
+            <div class="footer--name">
+                © François Hugot
+            </div>
+            <div class="footer--links">
+                <a class="underline" href="https://github.com/ciscoinfo" target="_blank">GitHub</a>
+                
+            </div>
+
+        </div>
+
+        <a href="#header"><span class="material-icons footer--button-up">expand_less</span></a>
+
+
+
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/shuffle.js"></script>
+
+</body>
+
+</html>
