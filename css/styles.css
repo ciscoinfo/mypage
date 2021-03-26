@@ -1367,7 +1367,7 @@ svg#bigTriangleColor {
 
 @media screen and (max-width: 899px) {
   .carousel-ctn {
-    max-height: 300px;
+    max-height: 40%;
   }
 }
 
