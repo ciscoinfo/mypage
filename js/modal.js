@@ -205,8 +205,8 @@ $(function(){
 			title: "Pathfinding Visualizer",
 			subtitle: "Application",
 			technos: "Python / PyGame",
-			summary: "A tool to visualize different pathfinding algorithms as it runs : A*, Breadth first search (BFS), Depth first search (DFS) and a random generator. The A* algorithm is used to find the shortest path between 2 points. The user can choose the starting point, the ending point and barriers. The program also displays the length of the path.",
-			features: ["Build PyGame application for vizualizing pathfinding", "Implement different search algorithms (A*, DFS, BFS)"],
+			summary: "A tool to visualize different pathfinding algorithms as it runs : A*, Breadth first search (BFS), Depth first search (DFS) and a random generator. The A* algorithm is used to find the shortest path between 2 points. The user can set the starting point, the ending point and barriers. The program also displays the length of the path.",
+			features: ["Build PyGame application to visualize pathfinding", "Implement different search algorithms (A*, DFS, BFS)"],
 			page_link: "",
 			github_link: "https://github.com/ciscoinfo/pathfinding_vizualizer",
 			images: {
@@ -348,34 +348,6 @@ $(function(){
 			$('.card-wrapper:last-child .card').css("background-image", "url(" + imageUrl + ")");
 		}
 	}
-
-
-
-
-
-
-	// btnLeft.click(function() {
-	// 	mySlider.animate({
-	// 		left: "+=" + '100' + "%"
-	// 	}, 800, function () {
-	// 		mySlider.currentIndex = mySlider.getPreviousIndex(mySlider.currentIndex);
-	// 		// The last image becomes the first
-	// 		slider.find('.slide:last-child').prependTo(slider);
-	// 		mySlider.resetSliderImages();
-	// 	});
-	// });
-
-
-	// btnRight.click(function() {
-	// 	mySlider.animate({
-	// 		left: "-=" + '100' + "%"
-	// 	}, 800,  function () {
-	// 		mySlider.currentIndex = mySlider.getNextIndex(mySlider.currentIndex);
-	// 		// The first image becomes the last
-	// 		slider.find('.slide:first-child').appendTo(slider);
-	// 		mySlider.resetSliderImages();
-	// 	});
-	// });
 
 
 
