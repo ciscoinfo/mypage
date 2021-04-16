@@ -208,7 +208,7 @@ $(function(){
 			summary: "A tool to visualize different pathfinding algorithms as it runs : A*, Breadth first search (BFS), Depth first search (DFS) and a random generator. The A* algorithm is used to find the shortest path between 2 points. The user can choose the starting point, the ending point and barriers. The program also displays the length of the path.",
 			features: ["Build PyGame application for vizualizing pathfinding", "Implement different search algorithms (A*, DFS, BFS)"],
 			page_link: "",
-			github_link: "",
+			github_link: "https://github.com/ciscoinfo/pathfinding_vizualizer",
 			images: {
 				folder: "07-pathfinding",
 				cover: "pathfinding_cover.png",
