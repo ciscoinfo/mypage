@@ -18,6 +18,8 @@
 
 # dev docs
 dev
+build.sh
+deploy.sh
 
 # scss
 scss
