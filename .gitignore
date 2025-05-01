@@ -19,8 +19,8 @@
 # dev docs
 dev
 
-# compiled css
-css
+# scss
+scss
 
 # Temporary build
 public
