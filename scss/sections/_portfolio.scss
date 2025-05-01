@@ -1,0 +1,123 @@
+
+
+.portfolio-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 15px;
+
+    @include media-max("phone-down") {
+        padding: 0;
+        gap: 0;
+    }
+}
+
+.card-wrapper {
+    position: relative;
+
+    // width: 390px;
+    // height: 300px;
+
+    &:hover .card {
+        opacity: 0;
+    }
+
+    &:hover .modal-button {
+        opacity: 1;
+        bottom: 24%;
+    }
+
+    &:hover .infos {
+        opacity: 1;
+        top: 24%;
+        cursor: default;
+    }
+}
+
+.card {
+    position: relative;
+    width: 390px;
+    height: 300px;
+    // background-image: url('../images/thumb-1.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: opacity .5s;
+
+    @include media-max("phone-down") {
+        width: 100vw;
+        // height: auto;
+    }
+}
+
+.infos {
+    position: absolute;
+
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    // center
+    left: 0;
+    right: 0;
+
+    font-family: "Raleway";
+    text-align: center;
+    line-height: 1.5;
+
+    transition: all 0.3s ease-in-out;
+
+
+
+    .title {
+        font-family: "Raleway-bold";
+        font-size: 1.8rem;
+        color: $blue_sapphire;
+
+        @include media-max("phone-down") {
+            font-size: 1.3rem;
+        }
+    }
+
+    .technos {
+        color: $orange_portfolio;
+        font-size: 1.3rem;
+
+        @include media-max("phone-down") {
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+    }
+}
+
+.modal-button {
+    opacity: 0;
+
+    position: absolute;
+    bottom: 0;
+    // center
+    left: 0;
+    right: 0;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+
+    padding: 7px 0;
+    margin: 0 auto;
+
+    color: $black_dark;
+    background-color: transparent;
+    border: 2px solid $orange_portfolio;
+    cursor: pointer;
+    // width: max-content;
+    width: 170px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: #fff;
+        background-color: $orange_portfolio;
+    }
+}
