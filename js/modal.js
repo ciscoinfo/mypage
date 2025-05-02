@@ -117,7 +117,7 @@ $(function(){
 			technos: "Python / Flask / Heroku",
 			summary: "A blog where you can post/modify/delete messages, add comments with authentication.",
 			features: ["Template integration", "Posts & comments management (SQLite, SQLAlchemy)", "authentication & security (Flask-Login)"],
-			page_link: "https://cisco-blog.herokuapp.com/",
+			page_link: "",
 			github_link: "https://github.com/ciscoinfo/Justablog",
 			images: {
 				folder: "01-blog",
@@ -132,7 +132,7 @@ $(function(){
 			technos: "HTML / Css / Python / Django / Heroku / Kivy",
 			summary: "The website and the cross-plateform App share the same database. The owner can change the menu and prices using an administration page. Data have persistence in the app and are updated when connected online.",
 			features: ["RESTful API creation and use", "Responsive design", "Data persistence"],
-			page_link: "https://pizzacisco.herokuapp.com/",
+			page_link: "",
 			github_link: "",
 			images: {
 				folder: "02-restaurant",
@@ -192,7 +192,7 @@ $(function(){
 			technos: "Python / Django / PythonAnywhere / PySide2 (Qt)",
 			summary: "Both the software and the Web app connect to an update Forex API. The user can select the currency graphs he wants to display and the time-unit.",
 			features: ["getting data of a REST API", "Displaying data with Js / Charts.js"],
-			page_link: "http://ciscoprog.pythonanywhere.com/days=7&currencies=USD",
+			page_link: "",
 			github_link: "",
 			images: {
 				folder: "06-forex",
